@@ -16,7 +16,7 @@ class FormCalc extends StatelessWidget {
       children: [
         const Text(
           "IMC",
-          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+          style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
         ),
         Container(
           decoration: BoxDecoration(

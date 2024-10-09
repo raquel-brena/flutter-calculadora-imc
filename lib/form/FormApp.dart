@@ -36,18 +36,39 @@ class FormApp extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                        child: Input(
-                          isPassword: false,
-                          placeholder: 'Birthday',
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Input(
+                              isPassword: false,
+                              placeholder: 'Birthday',
+                            ),
+                            SizedBox(height: 5),
+                            
+                            Text("MM/DD/YYYY", style: TextStyle(color: Colors.grey,  fontSize: 12),)
+                          ],
                         ),
                       ),
                       SizedBox(width: 20),
-                      Expanded(
-                        child: Input(
-                          isPassword: false,
-                          placeholder: 'Social Secutiry',
+                        Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Input(
+                              isPassword: false,
+                              placeholder: 'Social Security',
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              "###-##-####",
+                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                            )
+                          ],
                         ),
                       ),
+                   
                     ],
                   )
                 ],
