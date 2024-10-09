@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mini_projeto_01/calc_imd/CalcIMC.dart';
+import 'package:mini_projeto_01/calc_imc/CalcIMC.dart';
 import 'package:mini_projeto_01/form/FormApp.dart';
+import 'package:mini_projeto_01/grid/grid.dart';
 
 void main() {
   runApp(const MyApp());

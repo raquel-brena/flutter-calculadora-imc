@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mini_projeto_01/calc_imd/components/FormCalc.dart';
-import 'package:mini_projeto_01/calc_imd/components/ResultCalc.dart';
+import 'package:mini_projeto_01/calc_imc/components/FormCalc.dart';
+import 'package:mini_projeto_01/calc_imc/components/ResultCalc.dart';
 
 class CalcIMC extends StatefulWidget {
   const CalcIMC({Key? key}) : super(key: key);

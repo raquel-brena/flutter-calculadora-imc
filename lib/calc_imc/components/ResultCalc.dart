@@ -17,7 +17,7 @@ class _ResultCalcState extends State<ResultCalc> {
     String _url;
 
     double _imc = widget.imc;
-    if (_imc < 18.5) {
+    if (_imc > 0 && _imc < 18.5) {
       _status = "Abaixo do peso";
       _media = "SEU IMC < 18,5";
       _url = "images/1.png";
@@ -37,10 +37,14 @@ class _ResultCalcState extends State<ResultCalc> {
       _status = "Obesidade Grau II";
       _media = "25 <= SEU IMC < 30";
       _url = "images/5.png";
-    } else {
+    } else if (_imc >= 25 && _imc < 29.9) {
       _status = "Obesidade Mórbida";
       _media = "IMC >= 40";
       _url = "images/6.png";
+    } else {
+      _status = "";
+      _media = "";
+      _url = "";
     }
 
     return Column(
@@ -98,7 +102,8 @@ class _ResultCalcState extends State<ResultCalc> {
                     ),
                   ],
                 ),
-                _imc > 0 ? Image(image: AssetImage(_url)) : Container()
+                 if (widget.imc > 0)
+                  Image(image: AssetImage(_url)) 
               ],
             )),
       ],

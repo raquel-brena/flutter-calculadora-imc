@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mini_projeto_01/calc_imd/components/Input.dart';
+import 'package:mini_projeto_01/calc_imc/components/Input.dart';
 
 class FormCalc extends StatelessWidget {
   final Function(double, double) onCalculate;
