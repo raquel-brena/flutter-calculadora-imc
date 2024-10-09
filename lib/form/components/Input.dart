@@ -35,10 +35,9 @@ class Input extends StatelessWidget {
           hintText: placeholder,
           hintStyle: TextStyle(color: Colors.black26),
           contentPadding: EdgeInsets.symmetric(
-            vertical:  10,
+            vertical: 10,
             horizontal: 5,
           ),
-        
         ),
       ),
     );

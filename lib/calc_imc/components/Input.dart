@@ -8,7 +8,6 @@ class Input extends StatelessWidget {
   final String? erroText;
   final ValueChanged<String>? onchanged;
   final Color? backgroundColor, labelColor;
-  
 
   const Input({
     Key? key,
@@ -24,11 +23,12 @@ class Input extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          label, style: const TextStyle(fontWeight: FontWeight.w800),),
+          label,
+          style: const TextStyle(fontWeight: FontWeight.w800),
+        ),
         Container(
           margin: const EdgeInsets.only(top: 5),
           child: TextFormField(
@@ -36,8 +36,7 @@ class Input extends StatelessWidget {
             onChanged: onchanged,
             obscureText: isPassword,
             keyboardType: TextInputType.number,
-            decoration: 
-            InputDecoration(
+            decoration: InputDecoration(
               enabledBorder: InputBorder.none,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
@@ -49,10 +48,9 @@ class Input extends StatelessWidget {
               ),
               hintStyle: const TextStyle(color: Colors.black26),
               contentPadding: const EdgeInsets.symmetric(
-                vertical:  5,
+                vertical: 5,
                 horizontal: 5,
               ),
-              
               filled: true,
               fillColor: backgroundColor,
             ),

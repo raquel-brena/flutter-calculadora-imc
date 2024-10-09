@@ -64,7 +64,6 @@ class FormApp extends StatelessWidget {
                     isPassword: false,
                     placeholder: 'Address',
                   ),
-                 
                   Row(
                     children: [
                       Expanded(
@@ -82,7 +81,7 @@ class FormApp extends StatelessWidget {
                       ),
                     ],
                   ),
-                   Row(
+                  Row(
                     children: [
                       Expanded(
                         child: Input(

@@ -13,34 +13,34 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Mini Projeto 01',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
+      title: 'Mini Projeto 01',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          titleTextStyle: const TextStyle(
+              color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600),
+          backgroundColor: Colors.white,
+          title: const Text(
+            "Application",
+            style: TextStyle(color: Colors.black),
+          ),
+          actions: [
+            IconButton(
+              icon: const Icon(
+                Icons.more_vert,
+                color: Colors.white,
+              ),
+              onPressed: () {},
+            )
+          ],
         ),
-        home: Scaffold(
-          appBar: AppBar(
-            titleTextStyle: const TextStyle(
-                color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600),
-            backgroundColor: Colors.white,
-            title: const Text(
-              "Application",
-              style: TextStyle(color: Colors.black),
-            ),
-            actions: [
-              IconButton(
-                icon: const Icon(
-                  Icons.more_vert,
-                  color: Colors.white,
-                ),
-                onPressed: () {},
-              )
-            ],
-          ),
-          body: 
-           Center(
-            child: CalcIMC(),
-          ),
-        ));
+        body: Center(
+          child: CalcIMC(),
+        ),
+      ),
+    );
   }
 }

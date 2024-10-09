@@ -102,8 +102,7 @@ class _ResultCalcState extends State<ResultCalc> {
                     ),
                   ],
                 ),
-                 if (widget.imc > 0)
-                  Image(image: AssetImage(_url)) 
+                if (widget.imc > 0) Image(image: AssetImage(_url))
               ],
             )),
       ],

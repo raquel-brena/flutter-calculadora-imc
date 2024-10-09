@@ -32,21 +32,21 @@ class FormCalc extends StatelessWidget {
                     isPassword: false,
                     controller: _alturaController,
                     backgroundColor: Colors.grey.shade200),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Input(
                     label: "PESO (KG)",
                     isPassword: false,
                     controller: _pesoController,
                     backgroundColor: Colors.grey.shade200),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.yellow.shade700,
-                      padding: EdgeInsets.symmetric(
-                          horizontal: 100, vertical: 15), // Padding do botão
-                      textStyle: TextStyle(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 100, vertical: 15), 
+                      textStyle: const TextStyle(
                           color: Colors.black,
-                          fontWeight: FontWeight.bold), // Estilo do texto
+                          fontWeight: FontWeight.bold), 
                     ),
                     onPressed: () {
                       double? peso = double.tryParse(_pesoController.text);
@@ -56,7 +56,7 @@ class FormCalc extends StatelessWidget {
                         onCalculate(peso, altura);
                       }
                     },
-                    child: Text("CALCULAR"))
+                    child: const Text("CALCULAR"))
               ],
             ),
           ),
