@@ -1,5 +1,6 @@
 # flutter calculadora imc
 
+Este projeto é uma mini atividade da disciplina de **Dispositivos Móveis** na Universidade Federal do Rio Grande do Norte (UFRN).
 ![iimc](https://github.com/user-attachments/assets/dc05feae-72f7-4bbf-bb51-83f7222067ca)
 
 ## Getting Started
