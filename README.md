@@ -1,7 +1,6 @@
 # flutter calculadora imc
 
-![image](https://github.com/user-attachments/assets/a51984fc-4d20-4d62-89f3-6fa1042409b6)
-
+![iimc](https://github.com/user-attachments/assets/dc05feae-72f7-4bbf-bb51-83f7222067ca)
 
 ## Getting Started
 
