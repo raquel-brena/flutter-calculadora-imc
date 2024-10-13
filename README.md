@@ -1,6 +1,7 @@
-# mini_projeto_01
+# flutter calculadora imc
 
-A new Flutter project.
+![image](https://github.com/user-attachments/assets/a51984fc-4d20-4d62-89f3-6fa1042409b6)
+
 
 ## Getting Started
 
