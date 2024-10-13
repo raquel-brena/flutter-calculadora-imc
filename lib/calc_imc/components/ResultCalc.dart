@@ -31,13 +31,13 @@ class _ResultCalcState extends State<ResultCalc> {
       _status = "Sobrepeso";
       _media = "25 <= SEU IMC < 30";
       _url = "images/3.png";
-    } else if (_imc >= 25 && _imc < 29.9) {
+    } else if (_imc >= 30 && _imc < 35) {
       _status = "Obesidade Grau I";
-      _media = "35 <= SEU IMC < 40";
+      _media = "30 <= SEU IMC < 4350";
       _url = "images/4.png";
-    } else if (_imc >= 25 && _imc < 29.9) {
+    } else if (_imc >= 35 && _imc < 40) {
       _status = "Obesidade Grau II";
-      _media = "25 <= SEU IMC < 30";
+      _media = "35 <= SEU IMC < 40";
       _url = "images/5.png";
     } else if (_imc >= 40 ) {
       _status = "Obesidade Mórbida";

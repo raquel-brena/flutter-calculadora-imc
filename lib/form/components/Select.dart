@@ -25,11 +25,19 @@ class Select extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(top: 15),
       child: DropdownButtonFormField(
-        items: [
+        items: const [
           DropdownMenuItem(
-            child: Text("Item 1"),
-            value: 1,
-          )
+            child: Text("Alta"),
+            value: "Alta",
+          ),
+           DropdownMenuItem(
+            child: Text("Média"),
+            value: "Média",
+          ),
+           DropdownMenuItem(
+            child: Text("Baixa"),
+            value: "Baixa",
+          ),
         ],
         decoration: InputDecoration(
           enabledBorder: const UnderlineInputBorder(
@@ -42,7 +50,9 @@ class Select extends StatelessWidget {
             horizontal: 5,
           ),
         ),
-        onChanged: (int? value) {},
+        onChanged: (String? value) {
+
+        },
       ),
     );
   }
